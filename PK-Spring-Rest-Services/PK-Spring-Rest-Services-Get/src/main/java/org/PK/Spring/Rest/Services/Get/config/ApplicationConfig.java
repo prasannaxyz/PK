@@ -10,7 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 
 @ComponentScan(basePackageClasses = {
-        AppConfigPackageMarker.class,
+        AppConfigPackageMarker.class
      },
   excludeFilters = {
       @ComponentScan.Filter(type=FilterType.REGEX, pattern="org.*.main.Application")

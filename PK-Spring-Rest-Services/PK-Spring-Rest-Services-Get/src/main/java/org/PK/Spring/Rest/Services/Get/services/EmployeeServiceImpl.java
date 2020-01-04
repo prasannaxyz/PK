@@ -12,15 +12,15 @@ import com.pk.common.vo.Employee;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-   @Autowired
-   private EmployeeDao employeeDao;
+	@Autowired
+	private EmployeeDao employeeDao;
 
-  
+	@Transactional(readOnly = true)
+	@Override
+	public List<Employee> listUsers() {
+		List<Employee> employees = employeeDao.listUsers();
 
-   @Transactional(readOnly = true)
-   @Override
-   public List<Employee> listUsers() {
-      return employeeDao.listUsers();
-   }
+		return employees;
+	}
 
 }
