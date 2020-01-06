@@ -1,5 +1,7 @@
 package com.pk.common.exception;
 
+import java.text.MessageFormat;
+
 import org.apache.commons.lang3.ObjectUtils;
 
 import com.pk.common.util.MessageCode;
@@ -43,7 +45,7 @@ public class DefaultMessageCode implements MessageCode {
 
   @Override
   public String getDefaultMessage() {
-    return message;
+    return MessageFormat.format(message,getParameters());
   }
 
   @Override

@@ -9,6 +9,8 @@
  *******************************************************************************/
 package org.PK.Spring.Rest.Services.Get.common;
 
+import java.text.MessageFormat;
+
 import com.pk.common.exception.DefaultMessageCode;
 import com.pk.common.util.MessageCode;
 import com.pk.common.util.MessageType;
@@ -19,7 +21,8 @@ public enum GetEmployeeProfileMessageCode
     CREATE_FAIL(501, "Failed to create {0}"),
     ERROR_DUPLICATE(502, "Duplicate {0} are not allowed with the same key"),
     CREATED_SUCCESSFULLY(901, "{0} created successfully", MessageType.SUCCESS),
-    NOT_EMPTY(902,"{0} is not empty");
+    NOT_EMPTY(902,"{0} is not empty"),
+    EMPLOYEE_NOT_FOUND(903,"{0} are not found.");
 
     private final String message;
     private final int code;
@@ -39,12 +42,12 @@ public enum GetEmployeeProfileMessageCode
 
     @Override
     public String getCode() {
-        return "CREATE-TRN_PROF-" + this.code;
+        return "GET_EMPLOYEE-" + this.code;
     }
 
     @Override
     public String getDefaultMessage() {
-        return message;
+        return String.format(message);
     }
 
     @Override

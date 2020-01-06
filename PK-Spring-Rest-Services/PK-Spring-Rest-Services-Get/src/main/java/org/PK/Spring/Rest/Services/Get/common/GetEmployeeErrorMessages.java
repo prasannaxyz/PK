@@ -11,7 +11,7 @@ package org.PK.Spring.Rest.Services.Get.common;
 
 public class GetEmployeeErrorMessages {
 
-    public static final String DOMAIN_NAME = "Employee";
+    public static final String DOMAIN_NAME = "Employees";
     public static final String TRAIN_PROFILES = "Train Profiles";
 
     private GetEmployeeErrorMessages() {

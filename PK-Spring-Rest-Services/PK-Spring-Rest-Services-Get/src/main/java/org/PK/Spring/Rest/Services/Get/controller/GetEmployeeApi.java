@@ -28,4 +28,12 @@ public class GetEmployeeApi {
 		return new Response<>(employeeList);
 	}
 
+	@GetMapping(value = "/controllerAdviceDefault", produces = APPLICATION_JSON_VALUE)
+	public Response<EmployeeListVo> getValidationMessage(final HttpServletRequest request,
+			final HttpServletResponse response) {
+		EmployeeListVo employeeList = new EmployeeListVo();
+		employeeList.setEmployees(employeeService.showValidationMessage());
+		return new Response<>(employeeList);
+	}
+
 }

@@ -8,9 +8,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
+import com.pk.common.exception.CustomExceptionHandler;
+
 
 @ComponentScan(basePackageClasses = {
-        AppConfigPackageMarker.class
+        AppConfigPackageMarker.class,
+        CustomExceptionHandler.class
      },
   excludeFilters = {
       @ComponentScan.Filter(type=FilterType.REGEX, pattern="org.*.main.Application")
