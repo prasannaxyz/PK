@@ -21,7 +21,7 @@ public class GetEmployeeApi {
 	private EmployeeService employeeService;
 
 	@GetMapping(value = "/getEmployee", produces = APPLICATION_JSON_VALUE)
-	public Response<EmployeeListVo> getTrainProfiles(final HttpServletRequest request,
+	public Response<EmployeeListVo> getEmployee(final HttpServletRequest request,
 			final HttpServletResponse response) {
 		EmployeeListVo employeeList = new EmployeeListVo();
 		employeeList.setEmployees(employeeService.listUsers());

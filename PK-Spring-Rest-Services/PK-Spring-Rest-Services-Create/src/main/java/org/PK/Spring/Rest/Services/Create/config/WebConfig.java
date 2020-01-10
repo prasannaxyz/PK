@@ -15,6 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.pk.locking.lock.aspect.v2_0.autoconfigure.EnableLocking_v2_0;
 
 /**
  * Just the web configuration, for overall app configuration see
@@ -24,6 +25,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Import({
 	  ApplicationConfig.class  
 	})
+@EnableLocking_v2_0
 @EnableWebMvc
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {

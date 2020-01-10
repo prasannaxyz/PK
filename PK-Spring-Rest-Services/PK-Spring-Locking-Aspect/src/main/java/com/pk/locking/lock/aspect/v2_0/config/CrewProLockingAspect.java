@@ -17,6 +17,8 @@ public class CrewProLockingAspect {
 
 	@AfterReturning(value = "anyPublicMethod() && @annotation(crewProLock)", returning = "retVal")
 	public void doLock(CrewProLock crewProLock, CrewProLockActionAware retVal) {
+		System.out.println("Executing locking Aspect");
+		System.out.println(retVal.getLockingRecords().get(0).getSessionId());
 	}
 
 }
