@@ -1,4 +1,4 @@
-package com.pk.locking.lock.aspect.v2_0.config;
+package com.pk.locking.lock.aspect.v2_0.aspect;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

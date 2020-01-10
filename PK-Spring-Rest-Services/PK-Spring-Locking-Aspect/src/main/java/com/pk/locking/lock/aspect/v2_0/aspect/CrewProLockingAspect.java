@@ -1,4 +1,4 @@
-package com.pk.locking.lock.aspect.v2_0.config;
+package com.pk.locking.lock.aspect.v2_0.aspect;
 
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;

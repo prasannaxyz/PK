@@ -3,7 +3,7 @@ package org.PK.Spring.Rest.Services.Create.services;
 import org.springframework.stereotype.Component;
 
 import com.google.common.collect.Lists;
-import com.pk.locking.lock.aspect.v2_0.config.CrewProLock;
+import com.pk.locking.lock.aspect.v2_0.aspect.CrewProLock;
 import com.pk.locking.lock.aspect.v2_0.vo.CrewProLockAction;
 import com.pk.locking.lock.aspect.v2_0.vo.CrewProLockActionAware;
 import com.pk.locking.lock.aspect.v2_0.vo.CrewProLockType;
