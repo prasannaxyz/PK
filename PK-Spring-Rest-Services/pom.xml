@@ -170,6 +170,7 @@
 		<module>PK-Spring-Rest-Services-Common</module>
 		<module>PK-Spring-Rest-Services-Get</module>
     <module>PK-Spring-Locking-Aspect</module>
+    <module>PK-Spring-Rest-Services-Update</module>
   </modules>
   <build>
 		<plugins>
