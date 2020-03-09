@@ -19,7 +19,7 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
 		Response response = new Response(ex.getMessageCodes(), ex);
 
-		return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 }
